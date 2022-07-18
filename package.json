@@ -1,0 +1,31 @@
+{
+  "name": "test-curried",
+  "version": "1.0.0",
+  "description": "Patching test runners to test curried functions",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "com": "git add . && npx git-cz",
+    "test": "npm run tape; npm run ava",
+    "tape": "tape **/*test.js",
+    "ava": "TEST=ava ava **/*ava.js",
+    "sync": "npm run com; git pull && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriz/test-curried.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitriz/test-curried/issues"
+  },
+  "homepage": "https://github.com/dmitriz/test-curried#readme",
+  "devDependencies": {
+    "ava": "^4.3.1",
+    "tape": "^5.5.3"
+  }
+}
