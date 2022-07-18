@@ -1,6 +1,6 @@
 {
   "name": "test-curried",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Patching test runners to test curried functions",
   "main": "index.js",
   "directories": {
