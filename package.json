@@ -11,7 +11,11 @@
     "test": "npm run tape; npm run ava",
     "tape": "tape **/*test.js",
     "ava": "TEST=ava ava **/*ava.js",
-    "sync": "npm run com; git pull && git push"
+    "sync": "npm run com; git pull && git push",
+    "preversion": "npm test",
+    "postversion": "npm publish",
+    "postpublish": "npm run sync && git push --follow-tags",
+    "release": "npm run sync && npm publish"
   },
   "repository": {
     "type": "git",
