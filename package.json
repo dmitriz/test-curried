@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/dmitriz/test-curried#readme",
   "devDependencies": {
-    "ava": "4.3.1",
+    "ava": "5.3.1",
     "tape": "5.5.3"
   }
 }
